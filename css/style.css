@@ -95,7 +95,8 @@ main p{
 }
 
 main a, 
-.services a{
+.services a,
+.scandinavia a{
     margin-top: 1em;
     padding: 0.5em 1.9em ;
     
@@ -205,7 +206,8 @@ p{
     margin-bottom: 0;
 }
 
-.services a{
+.services a,
+.scandinavia a{
     margin-bottom: 0;
 
     color: #2E164E;
@@ -215,8 +217,172 @@ p{
     opacity: 80%;
 }
 
+/* end of services */
+
+.invest{
+    background-image: url(../img/home/ukraine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.invest-content{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align:  center;
+}
+
+.invest h1,
+.invest p{
+    width: 100%;
+    margin: 0;
+}
+
+.invest h1{
+    margin-bottom: 5%;
+
+    font-weight: bold;
+    font-size: 3.667vw;
+    line-height: 125.69%;
+    color: #4E1642;
+}
+
+.invest p{
+    font-weight: normal;
+    font-size: 2.333vw;
+    line-height: 125.69%;
+    text-align: center;
+    color: #6D1F65;
+}
+/* end of invest */
+
+.why-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.why-item:last-child{
+    margin-bottom: 0;
+}
+.why-text{
+    width: 60%;
+}
+
+.why h4{
+    margin-bottom: 1%;
+
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.75em;
+    line-height: 125.69%;
+    color: #BDBDBD;
+}
+
+.why p{
+    margin-top: 0;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: 1.375em;
+    line-height: 125.69%;
+    color: #2E164E;
+}
+
+.odd{
+    text-align: left;
+}
+
+.even{
+    text-align: right;
+}
+
+/*end od why*/
+
+.scandinavia{
+    background-image: url(../img/home/scandinavia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scandinavia-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+
+    text-align: center;
+    color: white;
+}
+
+.scandinavia h2{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 3.667vw;
+    color: white;
+}
+
+.scandinavia h3{
+    font-weight: normal;
+    font-size: 2.333vw;
+}
+
+.scandinavia .button{
+    margin-top: 2%;
+}
+
+/*end of scandinavia*/
+
+footer{
+    padding-top: 1%;
+    padding-bottom: .5%;
+
+    background: linear-gradient(90.64deg, #F27989 14.31%, #6D1F65 53.92%, #2E164E 104.86%);
+}
+
+footer p{
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 55%;
+}
+
+/*end of footer*/
+@media screen and (max-width: 1200px) { 
+    .why h4{
+        font-size: 1em;
+    }
+    .why p{
+        font-size: 0.7em;
+    }
+    .why img{
+        width: 30%;
+    }
+    /* end of why */
+}
 @media screen and (max-width: 1000px) { 
-    .logo-navigation{
+    .logo-navigation, .footer-content{
         display: flex;
         align-items: stretch;
         flex-direction: column;
@@ -257,7 +423,7 @@ p{
         font-size: 1.6em;
     }
     
-    main a{
+    main a, .scandinavia a{
         font-size: 1.4em;
     }
     /* end of main */
@@ -306,11 +472,47 @@ p{
    }
 
    .item-img{
-       width: 80%;
+       width: 50%;
+   }
+   /* end of services */
+
+   .invest h1{
+       font-size: 2em;
    }
 
+   .invest p{
+        font-size: 1.5em;
+    }
+    /* end of invest */
 
- }
+    .scandinavia h2{
+        font-size: 2em;
+    }
+    .scandinavia h3{
+        font-size: 1.3em;
+    }
+
+    .scandinavia .button{
+        margin-top: 3%;
+    }
+
+    /*end of scandinavia*/
+    
+    .left-footer{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .left-footer p{
+        font-size: 1em;
+    }
+
+    .left-footer img{
+        width: 70%;
+    }
+
+    /*end of footer*/
+}
 
  
 @media screen and (max-width: 420px) { 
@@ -339,5 +541,27 @@ p{
         font-size: 1.2em;
     }
     /*end of main*/
+
+    .why-item{
+        flex-direction: column;
+    }
+
+    .why-text{
+        width: 100%;
+        margin-bottom: 2%;
+        
+        text-align: center;
+    }
+
+    .why-item img{
+        width: 50%;
+    }
+
+    .even,
+    .why-item:last-child{
+        flex-direction: column-reverse;
+    }
+
+     /*end of why*/
 
 }
