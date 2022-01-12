@@ -7,6 +7,7 @@
     <title>RvZ Invest</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -17,9 +18,9 @@
             </div>
             <ul class="navigation">
                 <li><a href="#" class="nav-item chosen">Home</a></li>
-                <li><a href="#" class="nav-item">About us</a></li>
-                <li><a href="#" class="nav-item">Services</a></li>
-                <li><a href="#" class="nav-item">Contacts</a></li>
+                <li><a href="about.html" class="nav-item">About us</a></li>
+                <li><a href="services.html" class="nav-item">Services</a></li>
+                <li><a href="contacts.html" class="nav-item">Contacts</a></li>
             </ul>
         </div>
     </header>
@@ -27,10 +28,10 @@
         <div class="container content">
             <h1 class="padding-7vw">FIND A RIGHT PATH FOR YOUR BUSINESS IN SCANDINAVIA AND UKRAINE</h1>
             <p class="padding-7vw">We connect investors and businesses in Denmark and Ukraine</p>
-            <div class="main-button"><a href="#">Contact us</a></div> 
+            <div class="main-button"><a href="#" class="custom-button magenta-button">Contact us</a></div> 
         </div>
     </main>
-    <div class="about">
+    <div class="about mouse-paralax">
         <div class="container content about-content">
             <div class="about-left">
                 <div class="about-line-center">
@@ -41,8 +42,10 @@
                     from Ukraine and Denmark to find business partners, investors, and suppliers, contractors abroad, 
                     as well as to enter new international markets with their new products... <a href="#">Read more</a></p>
             </div>
-            <div class="about-right">
-                <img src="img/home/denmark.jpg" alt="Denmark" class="about-img">
+            <div class="about-right ">
+                <div class="mouse-paralax-item-" id="rectangle1"></div>
+                <div class="mouse-paralax-item" id="rectangle2"></div>
+                <img src="img/home/denmark.jpg" alt="Denmark" class="about-img">  
             </div> 
         </div>
     </div>
@@ -68,7 +71,7 @@
                     <p>Export to Ukraine. We will help your company to enter the Ukrainian market.</p>
             </div>   
         </div>
-        <div class="button"><a href="#">Learn More</a> </div>
+        <div class="button"><a href="services.html" class="custom-button">Learn More</a> </div>
     </div>
     </div>
     <div class="invest">
@@ -80,10 +83,13 @@
             </p>
         </div>
     </div>
-    <div class="why">
+    <div class="why  mouse-paralax">
         <div class="container content why-content">
             <h2>WHY INVEST IN UKRAINE</h2>
             <div class="line"></div>
+            <img class="mouse-paralax-item" id="why-1" src="img/paralax/1.png" alt="">
+            <img class="mouse-paralax-item" id="why-2" src="img/paralax/2.png" alt="">
+            <img class="mouse-paralax-item" id="why-3" src="img/paralax/3.png" alt="">
             <div class="why-items">
                 <div class="why-item">
                     <div class="why-text odd">
@@ -134,7 +140,7 @@
         <div class="container scandinavia-content">
             <h2>INVEST IN SCANDINAVIA</h2>
             <h3>BUSINESS IN DENMARK, SWEDEN, NORWAY</h3>
-            <div class="button"><a href="#">Learn More</a> </div>
+            <div class="button"><a class="custom-button" href="contacts.html">Learn More</a> </div>
         </div>
     </div>
     <footer>
@@ -149,5 +155,10 @@
             </div>
         </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script> 
 </body>
 </html>
