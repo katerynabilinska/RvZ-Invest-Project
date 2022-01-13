@@ -58,15 +58,15 @@ header{
 
 /*end of header styling*/
 
-main{
+/*main{
     background-image: url(../img/home/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
 .content{
-    padding-top: 5.25em;
-    padding-bottom: 7.8em;
+    padding-top: 6.25em;
+    padding-bottom: 8.8em;
 }
 
 .padding-7vw{
@@ -177,7 +177,7 @@ p{
 #rectangle2{
     position: absolute;
     width: 18.867vw;
-    height: 25.533vw;
+    height: 23.533vw;
     left: 340px;
     top: 120px;
 
@@ -438,6 +438,7 @@ footer p{
         height: 30vw;
     }
 }
+
 @media screen and (max-width: 1000px) { 
     .logo-navigation, .footer-content{
         display: flex;
@@ -580,6 +581,7 @@ footer p{
 
     /*end of footer*/
 }
+
 @media screen and (max-width: 850px) { 
     .about-right{
         margin-top: 3%;
@@ -710,5 +712,51 @@ button:hover{
     box-shadow: 0 0 10px 0 #F27989 inset, 0 0 10px 4px #F27989;
 }
 
-.totop{
+
+.slider{
+    max-width: 100%;
+    position: relative;
+    
+    margin: auto;
+    overflow: hidden;
+
+    transition:2s all;
 }
+
+.absolute-main{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.slider .slider-item img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 800px;
+}
+
+
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+    opacity: 0.7;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
